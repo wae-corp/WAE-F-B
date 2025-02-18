@@ -92,7 +92,7 @@ export default function Page() {
                 </label>
                 <Input
                   id="company"
-                  placeholder="Placeholder"
+                  placeholder="Company"
                   className="bg-black/40 border-gray-700 text-white placeholder:text-gray-500"
                 />
               </div>
