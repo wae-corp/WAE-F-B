@@ -81,7 +81,7 @@ export default function Page() {
                 <Input
                   id="email"
                   type="email"
-                  placeholder="you@example.com"
+                  placeholder="marketing@waecop.com"
                   className="bg-black/40 border-gray-700 text-white placeholder:text-gray-500"
                 />
               </div>
