@@ -15,9 +15,11 @@ export default function RootLayout({
   return (
     <html lang="en">
        <head>
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        {/* Alternative for PNG */}
-        {/* <link rel="icon" href="/favicon.png" type="image/png" /> */}
+        <link
+          rel="icon"
+          href="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/34843184-1524-47cf-c856-423bf2b69700/public"
+          type="image/png"
+        />
       </head>
       <body>{children}</body>
     </html>
