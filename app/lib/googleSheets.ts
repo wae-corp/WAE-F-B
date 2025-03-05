@@ -1,18 +1,11 @@
 import { GoogleAuth } from "google-auth-library";
 import { google } from "googleapis";
-import fs from "fs";
-import path from "path";
-
-// Ensure the correct file path
-const keyPath = path.join(process.cwd(), "wae-fnb-launch-page-responses-794ac3419e61.json");
-
-// Check if the file exists
-if (!fs.existsSync(keyPath)) {
-  throw new Error(`Service account key file not found: ${keyPath}`);
-}
 
 const auth = new GoogleAuth({
-  keyFile: keyPath,
+  credentials: {
+    client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
+    private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
+  },
   scopes: ["https://www.googleapis.com/auth/spreadsheets"],
 });
 
@@ -43,5 +36,5 @@ export async function saveToGoogleSheet(data: any) {
       console.error("🚨 Google Sheets API Error:", error);
       throw error;
     }
-  }
+}
   
