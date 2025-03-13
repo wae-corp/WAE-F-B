@@ -81,4 +81,7 @@ The responses will be recorded in a google sheet. Here’s the link to the sheet
 
 All the permissions (if required) can be enabled through wae.marktech@gmail.com
 
+# Author
+Harshit Raj
+
 
